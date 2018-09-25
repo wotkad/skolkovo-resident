@@ -1,0 +1,60 @@
+.popup__overlay
+.popup
+	.popup__header
+		.popup__header-title Расчет выгоды компании
+		.popup__header-close
+			<svg xmlns="http://www.w3.org/2000/svg" width="348" height="348" viewBox="0 0 348.3 348.3"><path d="M336.6 68.6L231 174.2l105.5 105.5c15.7 15.7 15.7 41.1 0 56.9 -7.8 7.8-18.1 11.8-28.4 11.8 -10.3 0-20.6-3.9-28.4-11.8L174.2 231 68.6 336.6c-7.8 7.8-18.1 11.8-28.4 11.8 -10.3 0-20.6-3.9-28.4-11.8 -15.7-15.7-15.7-41.1 0-56.8l105.5-105.5L11.8 68.6c-15.7-15.7-15.7-41.1 0-56.8 15.7-15.7 41.1-15.7 56.8 0l105.6 105.6L279.7 11.8c15.7-15.7 41.1-15.7 56.8 0C352.3 27.5 352.3 52.9 336.6 68.6z"/></svg>
+	form.popup__form(action="#")
+		.popup__item
+			.popup__item-title Кол-во
+				<br> сотрудников
+			.popup__item-input
+				input(required="required" type="text" placeholder="10 000 чел.")#workers
+		.popup__item
+			.popup__item-title Средняя ЗП
+				<br> сотрудника за месяц
+			.popup__item-input
+				input(required="required" type="text" placeholder="60 000 руб.")#salary-workers
+		.popup__item
+			.popup__item-title Прибыль
+				<br> компании за год
+			.popup__item-input
+				input(type="text" placeholder="20 000 000 руб.")#money
+		.popup__item
+			.popup__item-title Цена ввозной
+				<br> партии
+			.popup__item-input
+				input(type="text" placeholder="5 000 000 руб.")#intro-items
+		.popup__itemsfull
+			.popup__itemsfull-title Итоговая экономия за год: &nbsp;
+				span#final-economy
+					span 0 руб.
+			.popup__itemfull
+				.popup__itemfull-title Экономия с ЗП сотрудников за год:
+					.popup__itemfull-percent
+						p#workers-economy 0 руб.
+							p#percent &nbsp;(0%)
+			.popup__itemfull
+				.popup__itemfull-title Экономия с налога на прибыль за год:
+					p#money-economy
+						span 0 руб. (0%)
+			.popup__itemfull
+				.popup__itemfull-title Экономия
+					<br> с НДС за год
+					p#taxes-economy
+						span 0 руб. (0%)
+			.popup__itemfull
+				.popup__itemfull-title Экономия при ввозе продукции:
+					p#intro-items-economy
+						span 0 руб. (0%)
+		.popup__controls
+			button(type="submit" onclick="result()").popup__button-count Расчитать
+			button(type="reset").popup__button-reset Сбросить
+	form.popup__footer#popup-form
+		input.popup__footer-input(required="required" type="text" name="name" placeholder="Ваше имя")
+		input.popup__footer-input(required="required" type="email" name="email" placeholder="Ваш email")
+		input.popup__footer-input(required="required" type="tel" name="phone" placeholder="Ваш телефон")
+		input.popup__footer-input#summ(type="hidden" name="summ")
+		textarea.popup__footer-textarea(name="text" placeholder="Информация о Вашей компании")
+		button(type='submit').popup__footer-button Оставить заявку на резиденство
+			span Перезвоним Вам через 15 минут

@@ -1,0 +1,87 @@
+.garant
+	padding 40px 0 90px 0
+	display flex
+	&__info
+		flex-basis 33.33334%
+		margin 50px 0 0 53px
+		order 3
+		&-title
+			font-size 2rem
+			font-family $SemiBold
+			color $text
+			position relative
+			&:after
+				content ''
+				width 40%
+				background-color $green
+				height 1px
+				display inline-block
+				position absolute
+				z-index -1
+				bottom -20.5px
+				left 0
+		&-subtitle
+			font-size 1.125rem
+			line-height 24px
+			color $text
+			margin 41px 0 25px
+			font-family $Light
+			line-height 24px
+			width 100%
+	&__items
+		box-shadow 0px 4px 30px rgba(0, 0, 0, 0.05)
+		display flex
+		flex-basis 66.66667%
+		border-radius 15px
+	&__item
+		flex-basis 50%
+		border-radius 15px
+		padding 40px
+		transition .3s
+		z-index 2
+		&-image
+			margin-bottom 25px
+		&-title
+			padding-bottom 15px
+			font-family $SemiBold
+			font-size 1.125rem
+			position relative
+			line-height 25px
+			overflow hidden
+			&:after
+				content ''
+				width 40%
+				background-color $green
+				height 1px
+				display inline-block
+				position absolute
+				transition: .3s
+				z-index -1
+				bottom 8px
+				left 0
+				transform translateX(-100%)
+		&-desc
+			font-family $Regular
+			font-size 0.875rem
+			line-height 18px
+	&__item:hover &__item-title:after
+		transform translateX(0)
+		z-index 1
+	&__item:nth-child(1)
+		box-shadow 0px 4px 30px rgba(0, 0, 0, 0.05)
+		order 1
+	&__item:nth-child(2)
+		order 2
+@media (max-width:61.9375rem)
+	.garant
+		flex-direction column
+	.garant__items
+		flex-basis 100%
+		flex-wrap wrap
+		flex-direction column
+		order 2
+		margin 0 30px
+	.garant__info
+		order 1
+		padding 0 30px
+		margin 0

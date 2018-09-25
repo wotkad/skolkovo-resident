@@ -1,0 +1,89 @@
+.canwe-bg
+	background url(/images/home-bg.jpg) 50% 50%
+	background-size cover
+	background-repeat no-repeat
+	height 100%
+	filter blur(20px)
+	opacity .25
+	position absolute
+	top 0
+	right 0
+	left 0
+	bottom 0
+	z-index -1
+.canwe
+	display flex
+	position relative
+	padding 0 0 40px
+	&__image
+		flex-basis 50%
+	&__image-mob
+		display none
+	&__image img
+		width 100%
+	&__info
+		flex-basis 40%
+		display flex
+		flex-direction column
+		justify-content center
+		&-title
+			font-size 2rem
+			font-family $SemiBold
+			color $text
+			position relative
+		&-title span:first-child
+			color $green
+			margin-left 12px
+			&:after
+				content ''
+				width 25%
+				background-color $green
+				height 1px
+				display inline-block
+				position absolute
+				z-index -1
+				bottom -20.5px
+				left 0
+		&-subtitle
+			font-size 1.125rem
+			line-height 24px
+			color $text
+			margin 41px 0 25px
+			font-family $Light
+			line-height 24px
+			width 100%
+		&-button
+			cursor pointer
+			border-radius 5px
+			display flex
+			justify-content center
+			color $white
+			font-family $SemiBold
+			font-size 1.25rem
+			line-height 28px
+			align-items center
+			border none
+			padding 20px 38px
+			background $greengradient
+			width 70%
+			margin-top 30px
+			transition .3s
+			&:hover
+				opacity .8
+@media (max-width:78.125rem)
+	.canwe__info-button
+		padding 10px 38px
+	.canwe-bg
+		display none
+@media (max-width:61.9375rem)
+	.canwe
+		flex-direction column
+		padding 30px 30px 50px 30px
+		background-color $gray
+	.canwe__image
+		display none
+	.canwe__info
+		justify-content center
+		align-items center
+	.canwe__info-subtitle
+		width auto

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		title Skolkovo resident
+		link(rel="stylesheet", href="/css/libs.min.css")
+		link(rel="stylesheet", href="/css/style.css")
+		link(rel="shortcut icon" type="image/png" href="/images/favicon.png")
+		script(src="https://cdn.polyfill.io/v2/polyfill.min.js")
+	body.body
+		.wrapper
+			section#home
+				include ./blocks/common/header.pug
+			section#services
+				include ./blocks/index/services.pug
+			section#canwe
+				include ./blocks/index/canwe.pug
+			section#garant
+				include ./blocks/index/garant.pug
+			section#benefit
+				include ./blocks/index/benefit.pug
+			section#directions
+				include ./blocks/index/directions.pug
+			section#blog
+				include ./blocks/index/blog.pug
+			section#contacts
+				include ./blocks/index/contacts.pug
+			section#footer
+				include ./blocks/common/footer.pug
+		include ./blocks/common/popup.pug
+		include ./blocks/common/popup2.pug
+		script(src="/js/libs.min.js")
+		script(src="/js/main.js")

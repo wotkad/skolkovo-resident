@@ -1,0 +1,253 @@
+.benefit-bg
+	background url(/images/home-bg.jpg) 50% 50%
+	background-size cover
+	background-repeat no-repeat
+	height 100%
+	filter blur(20px)
+	opacity .25
+	position absolute
+	top 0
+	right 0
+	left 0
+	bottom 0
+	z-index -1
+.benefit
+	padding 40px 10% 40px 10%
+	display flex
+	position relative
+	justify-content space-between
+	flex-basis 40%
+	&__info
+		display flex
+		flex-direction column
+		flex-basis 30%
+		padding 0 15px 0 0
+		&-title
+			font-size 2.625rem
+			font-family $SemiBold
+			color $text
+			position relative
+			&:after
+				content ''
+				width 25%
+				background-color $green
+				height 1px
+				display inline-block
+				position absolute
+				z-index -1
+				bottom -20.5px
+				left 0
+		&-subinfo
+			font-size 1.125rem
+			line-height 24px
+			color $text
+			margin 41px 0 0px
+			font-family $SemiBold
+			line-height 24px
+			width 90%
+		&-subtitle
+			font-size 1.125rem
+			line-height 24px
+			color $text
+			margin 25px 0 0
+			font-family $Light
+			line-height 24px
+			width 90%
+		&-button
+			background-color $white
+			padding 15px 30px
+			border 1px solid $green
+			margin 2.5px
+			border-radius 5px
+			font-family $SemiBold
+			font-size 1rem
+			line-height 22px
+			color $green
+			transition: .3s
+			cursor pointer
+			position relative
+			&:hover:after
+				content ''
+				position absolute
+				left 15px
+				top calc(50% - 6px)
+				background-color $green
+				border-radius 50%
+				width 12px
+				height 12px
+	&__containter
+		background-color $white
+		border-radius 15px 15px 5px 5px
+		width 66.66667%
+		box-shadow 0px 4px 30px rgba(0, 0, 0, 0.05);
+		background-color $white
+		&-title
+			font-family $SemiBold
+			font-size 2rem
+			line-height 45px
+			color $text
+			margin 25px 49px 0 49px
+	&__table
+		display flex
+		flex-direction column
+		margin-top 30px
+		margin 5px 49px 0 49px
+		&-row
+			display flex
+			border-bottom 1px solid $gray
+			&-item
+				padding 25px 0
+				flex-basis 20%
+				font-family $Regular
+			&-item svg
+				max-width 16px
+				max-height 16px
+				fill $green
+				margin-right 5px
+			&-itemgray
+				font-size 0.625rem
+				line-height 13px
+				font-family $SemiBold
+				text-transform uppercase
+				color #9f9f9f
+				padding-right 20px
+			&-itemgreen p
+				padding 5px 8px
+				background-color $green
+				display inline-block
+				border-radius 5px
+			&-itemfull
+				flex-basis 100%
+				font-family $SemiBold
+				display flex
+				align-items center
+			&-itemblack
+				font-family $SemiBold
+		&-row:last-child
+			border none
+	&__mobtable
+		display none
+		flex-direction column
+		margin-top 30px
+		margin 5px 49px 0 49px
+		&-row
+			display flex
+			flex-direction column
+			margin-bottom 10px
+			border-bottom 1px solid $gray
+		&-row:last-child
+			border none
+		&-titles
+			margin-bottom 10px
+			font-family $Regular
+			display flex
+			margin-bottom 23px
+			&-title
+				flex-basis 50%
+			&-titleblack
+				font-family $SemiBold
+		&-item
+			margin-bottom 10px
+			font-family $Regular
+			display flex
+			&-text
+				flex-basis 50%
+		&-title
+			font-size 0.625rem
+			line-height 13px
+			font-family $SemiBold
+			text-transform uppercase
+			color #9f9f9f
+			margin-bottom 15px
+		&-item svg
+			max-width 16px
+			max-height 16px
+			fill $green
+			margin-right 5px
+		&-itemgray
+			font-size 0.625rem
+			line-height 13px
+			font-family $SemiBold
+			text-transform uppercase
+			color #9f9f9f
+			padding-right 20px
+		&-itemgreen p
+			padding 5px 8px
+			background-color $green
+			display inline-block
+			border-radius 5px
+		&-itemfull
+			flex-basis 100%
+			font-family $SemiBold
+			display flex
+			align-items center
+		&-itemblack
+			font-family $SemiBold
+	&__button
+		cursor pointer
+		border-radius 5px
+		display flex
+		justify-content center
+		color $white
+		font-family $SemiBold
+		font-size 1.25rem
+		line-height 28px
+		align-items center
+		border none
+		padding 30px 38px
+		background $greengradient
+		width 100%
+		transition .3s
+		&:hover
+			opacity .8
+	&__button svg
+		max-width 20px
+		max-height 20px
+		fill $white
+		margin-right 5px
+	&__mobbutton
+		cursor pointer
+		border-radius 5px
+		display none
+		justify-content center
+		color $white
+		font-family $SemiBold
+		font-size 1.25rem
+		line-height 28px
+		align-items center
+		border none
+		padding 30px 38px
+		background $greengradient
+		width 100%
+		transition .3s
+		&:hover
+			opacity .8
+	&__mobbutton svg
+		max-width 20px
+		max-height 20px
+		fill $white
+		margin-right 5px
+@media (max-width:61.9375rem)
+	.benefit
+		margin 0
+	.benefit-bg
+		display none
+	.benefit
+		padding 40px 30px
+		flex-direction column
+		background-color $gray
+	.benefit__containter
+		margin-top 30px
+		width 100%
+		flex-basis 100%
+	.benefit__containter-title
+		margin-bottom 15px
+@media (max-width:40.625rem)
+	.benefit__table
+		display none
+	.benefit__button
+		display none
+	.benefit__mobtable
+		display flex
+	.benefit__mobbutton
+		display flex

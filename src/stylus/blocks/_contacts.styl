@@ -1,0 +1,78 @@
+.contacts
+	display flex
+	margin 0
+	padding-top 71px
+	justify-content space-between
+	&__map
+		flex-basis 58.33334%
+		margin-right 6.33334%
+		max-width 58.33334%
+	&__map img
+		width 100%
+	&__block
+		flex-basis: 33.33334%
+		&-list
+			font-size 1.125rem
+			line-height 24px
+			color $text
+			margin 40px 0 25px
+			line-height 24px
+		&-list-item span
+			font-family $SemiBold
+		&-list-item span p
+			display inline
+			line-height 32px
+			font-family $Light
+		&-list-item span a
+			font-family $Light
+		&-title
+			font-size 2.625rem
+			font-family $SemiBold
+			color $text
+			position relative
+			&:after
+				content ''
+				width 25%
+				background-color $green
+				height 1px
+				display inline-block
+				position absolute
+				z-index -1
+				bottom -20.5px
+				left 0
+		&-button
+			cursor pointer
+			border-radius 5px
+			display flex
+			justify-content center
+			color $white
+			font-family $SemiBold
+			font-size 1.25rem
+			line-height 28px
+			align-items center
+			border none
+			padding 20px 38px
+			background $greengradient
+			width 80%
+			margin-top 30px
+			transition .3s
+			&:hover
+				opacity .8
+@media (max-width:61.9375rem)
+	.contacts
+		flex-direction column
+		padding 71px 30px 0 30px
+		margin-top 0
+	.contacts__map
+		flex-basis 100%
+		max-width 100%
+		margin 0
+		order 2
+		margin-bottom 10px
+	.contacts__block
+		flex-basis 100%
+		order 1
+		margin-bottom 30px
+	.contacts__block-button
+		padding 10px 38px
+		width 100%

@@ -1,0 +1,150 @@
+.canwe-bg {
+  background: url("/images/home-bg.jpg") 50% 50%;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+  opacity: 0.25;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.canwe {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 0 0 40px;
+}
+.canwe__image {
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+}
+.canwe__image-mob {
+  display: none;
+}
+.canwe__image img {
+  width: 100%;
+}
+.canwe__info {
+  -webkit-flex-basis: 40%;
+      -ms-flex-preferred-size: 40%;
+          flex-basis: 40%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.canwe__info-title {
+  font-size: 2rem;
+  font-family: $SemiBold;
+  color: $text;
+  position: relative;
+}
+.canwe__info-title span:first-child {
+  color: $green;
+  margin-left: 12px;
+}
+.canwe__info-title span:first-child:after {
+  content: '';
+  width: 25%;
+  background-color: $green;
+  height: 1px;
+  display: inline-block;
+  position: absolute;
+  z-index: -1;
+  bottom: -20.5px;
+  left: 0;
+}
+.canwe__info-subtitle {
+  font-size: 1.125rem;
+  line-height: 24px;
+  color: $text;
+  margin: 41px 0 25px;
+  font-family: $Light;
+  line-height: 24px;
+  width: 100%;
+}
+.canwe__info-button {
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: $white;
+  font-family: $SemiBold;
+  font-size: 1.25rem;
+  line-height: 28px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  padding: 20px 38px;
+  background: $greengradient;
+  width: 70%;
+  margin-top: 30px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.canwe__info-button:hover {
+  opacity: 0.8;
+}
+@media (max-width: 78.125rem) {
+  .canwe__info-button {
+    padding: 10px 38px;
+  }
+  .canwe-bg {
+    display: none;
+  }
+}
+@media (max-width: 61.9375rem) {
+  .canwe {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 30px 30px 50px 30px;
+    background-color: $gray;
+  }
+  .canwe__image {
+    display: none;
+  }
+  .canwe__info {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .canwe__info-subtitle {
+    width: auto;
+  }
+}

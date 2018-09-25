@@ -1,0 +1,190 @@
+.footer-bg {
+  background-color: #262626;
+  height: 100%;
+}
+.footer__nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 0;
+  border-bottom: 1px solid #646464;
+  margin-top: 73px;
+}
+.footer__nav-menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__nav-menu-item {
+  color: $white;
+  font-family: $Regular;
+  font-size: 0.875rem;
+  line-height: 19px;
+  margin-left: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.footer__nav-menu-item:after {
+  content: '';
+  width: 100%;
+  height: 5px;
+  display: inline-block;
+  position: absolute;
+  z-index: -1;
+  bottom: 2px;
+  left: 0;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.footer__nav-menu-item:hover.footer__nav-menu-item:after {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+  background-color: $green;
+  z-index: 1;
+}
+.footer__nav-menu-item p {
+  z-index: 3;
+  position: relative;
+}
+.footer__desc {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px 0;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__desc-copy {
+  font-family: $Light;
+  line-height: 17px;
+  font-size: 0.75rem;
+  color: $white;
+  -webkit-flex-basis: 66.66667%;
+      -ms-flex-preferred-size: 66.66667%;
+          flex-basis: 66.66667%;
+}
+.footer__desc-author {
+  color: $white;
+  font-family: $Light;
+  font-size: 0.875rem;
+  line-height: 19px;
+  position: relative;
+  overflow: hidden;
+  margin-left: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer__desc-author-link {
+  color: $white;
+  font-family: $Regular;
+  font-size: 1rem;
+  line-height: 19px;
+  position: relative;
+  overflow: hidden;
+  margin-left: 5px;
+  display: inline-block;
+}
+.footer__desc-author-link:after {
+  content: '';
+  width: 100%;
+  height: 5px;
+  display: inline-block;
+  position: absolute;
+  z-index: -1;
+  bottom: 2px;
+  left: 0;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.footer__desc-author-link:hover.footer__desc-author-link:after {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+  background-color: $green;
+  z-index: 1;
+}
+.footer__desc-author-link p {
+  z-index: 3;
+  position: relative;
+  display: inline-block;
+}
+@media (max-width: 61.9375rem) {
+  .footer__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__nav-menu {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .footer__nav-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__nav-menu-item {
+    line-height: 42px;
+    margin: 0;
+  }
+  .footer__nav-menu-item:after {
+    bottom: 15px;
+  }
+  .footer__desc {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 25px 30px;
+  }
+  .footer__desc-author {
+    margin: 15px 0 0 0;
+    text-align: left;
+    width: 100%;
+  }
+}
